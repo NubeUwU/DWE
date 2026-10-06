@@ -1,0 +1,2 @@
+let saludo = "Hola, mundo!";
+alert(saludo);
