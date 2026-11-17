@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +9,18 @@
   <body>
     <h1>Contenedores</h1>
     <form>
-      <label>Referencia:</label>
+      <label for="referencia">Referencia:</label>
       <input type="text" id="referencia" />
-      <label>Peso:</label>
+
+      <label for="peso">Peso:</label>
       <input type="text" id="peso" />
-      <label>Volumen:</label>
+
+      <label for="volumen">Volumen:</label>
       <input type="text" id="volumen" />
-      <button class="btn add">Añadir</button>
-      <button class="btn edit">Modificar</button>
-      <button class="btn calculate">Calcular</button>
+
+      <button type="button" id="add" class="btn">Añadir</button>
+      <button type="button" id="edit" class="btn">Modificar</button>
+      <button type="button" id="calculate" class="btn">Calcular</button>
     </form>
   </body>
 </html>
