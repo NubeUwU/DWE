@@ -7,20 +7,34 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Contenedores</h1>
-    <form>
-      <label for="referencia">Referencia:</label>
-      <input type="text" id="referencia" />
+    <main>
+      <h1>Contenedores</h1>
+      <form>
+        <label for="referencia">Referencia:</label>
+        <input type="text" id="referencia" />
 
-      <label for="peso">Peso:</label>
-      <input type="text" id="peso" />
+        <label for="peso">Peso:</label>
+        <input type="text" id="peso" />
 
-      <label for="volumen">Volumen:</label>
-      <input type="text" id="volumen" />
+        <label for="volumen">Volumen:</label>
+        <input type="text" id="volumen" />
 
-      <button type="button" id="add" class="btn">Añadir</button>
-      <button type="button" id="edit" class="btn">Modificar</button>
-      <button type="button" id="calculate" class="btn">Calcular</button>
-    </form>
+        <button type="button" id="add" class="btn">Añadir</button>
+        <button type="button" id="edit" class="btn">Modificar</button>
+        <button type="button" id="calculate" class="btn">Calcular</button>
+        <aside>
+          <table>
+            <thead>
+              <tr>
+                <th>Referencia</th>
+                <th>Peso</th>
+                <th>Volumen</th>
+              </tr>
+            </thead>
+            <tbody id="container-list"></tbody>
+          </table>
+        </aside>
+      </form>
+    </main>
   </body>
 </html>

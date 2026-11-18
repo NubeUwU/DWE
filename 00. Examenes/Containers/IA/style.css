@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+/* Contenedor flexible: tabla a la izquierda, aside a la derecha */
+.contenido-principal {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+  align-items: flex-start;
+}
+
+.seccion-tabla {
+  flex: 2;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Panel derecho (aside) para mensajes y cálculos */
+aside#panel-logs {
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+aside#panel-logs h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.mensaje-error {
+  color: #b71c1c;
+  background-color: #ffebee;
+  border: 1px solid #ef9a9a;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.mensaje-exito {
+  color: #1b5e20;
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.mensaje-calculo {
+  color: #0d47a1;
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  padding: 10px;
+  border-radius: 4px;
+}
