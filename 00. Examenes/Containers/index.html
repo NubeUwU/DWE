@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ContenedEx</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <main>
       <h1>Contenedores</h1>
@@ -13,28 +15,40 @@
         <label for="referencia">Referencia:</label>
         <input type="text" id="referencia" />
 
-        <label for="peso">Peso:</label>
+        <label for="peso">Peso (Kg):</label>
         <input type="text" id="peso" />
 
-        <label for="volumen">Volumen:</label>
+        <label for="volumen">Volumen (m³):</label>
         <input type="text" id="volumen" />
 
         <button type="button" id="add" class="btn">Añadir</button>
         <button type="button" id="edit" class="btn">Modificar</button>
         <button type="button" id="calculate" class="btn">Calcular</button>
-        <aside>
-          <table>
+      </form>
+
+      <div class="contenido-principal">
+        <section class="seccion-tabla">
+          <button type="button" id="btn-alta-densidad" class="btn">
+            Mostrar Alta Densidad
+          </button>
+
+          <!-- Empieza oculta con el atributo hidden -->
+          <table id="tabla-alta-densidad" hidden>
             <thead>
               <tr>
                 <th>Referencia</th>
-                <th>Peso</th>
-                <th>Volumen</th>
+                <th>Densidad</th>
               </tr>
             </thead>
             <tbody id="container-list"></tbody>
           </table>
+        </section>
+
+        <aside id="panel-logs">
+          <h2>Logs</h2>
+          <div id="logs"></div>
         </aside>
-      </form>
+      </div>
     </main>
   </body>
 </html>
