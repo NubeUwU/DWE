@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ContenedEx</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      .contenido-principal {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .seccion-tabla,
+      #panel-logs {
+        flex: 1;
+      }
+
+      #panel-logs {
+        flex: 1;
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 6px;
+        text-align: left;
+      }
+    </style>
   </head>
 
   <body>
@@ -21,9 +51,9 @@
         <label for="volumen">Volumen (m³):</label>
         <input type="text" id="volumen" />
 
-        <button type="button" id="add" class="btn">Añadir</button>
-        <button type="button" id="edit" class="btn">Modificar</button>
-        <button type="button" id="calculate" class="btn">Calcular</button>
+        <button type="button" id="agregar" class="btn">Añadir</button>
+        <button type="button" id="editar" class="btn">Modificar</button>
+        <button type="button" id="calcular" class="btn">Calcular</button>
       </form>
 
       <div class="contenido-principal">
@@ -32,7 +62,6 @@
             Mostrar Alta Densidad
           </button>
 
-          <!-- Empieza oculta con el atributo hidden -->
           <table id="tabla-alta-densidad" hidden>
             <thead>
               <tr>
