@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://jquery.com" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jqueryui.min.js"></script>
+
+    <style>
+      #sort-container {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+      }
+      #sort-container li {
+        margin: 0 3px 3px 3px;
+        padding: 0.4em;
+        padding-left: 1.5em;
+        font-size: 1.4em;
+        height: 18px;
+      }
+      #sort-container li span {
+        position: absolute;
+        margin-left: -1.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="sort-container">
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Juan
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Paula
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Jorge
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Rita
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Pedro
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Sara
+      </li>
+    </ul>
+    <script>
+      $(function () {
+        $("#sort-container").sortable({
+          opacity: 0.5,
+          cursor: "move",
+          axis: "y",
+        });
+      });
+    </script>
+  </body>
+</html>
